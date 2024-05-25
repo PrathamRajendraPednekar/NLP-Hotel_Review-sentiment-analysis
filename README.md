@@ -20,15 +20,18 @@
     - Tokenization: Split the text into individual words or tokens.
     - Stop Words Removal: Removed common stop words (e.g., 'and', 'the', 'is') that do not contribute to the sentiment.
     - Lemmatization/Stemming: Reduced words to their base or root form to standardize the text data.
+    
   Feature Extraction
     - Bag of Words (BoW): Represented text data as a bag of words, capturing the frequency of each word in the text.
     - TF-IDF (Term Frequency-Inverse Document Frequency): Weighted the importance of words based on their frequency and how unique they are across all documents.
     - Word Embeddings: Used pre-trained word embeddings like Word2Vec or GloVe to capture semantic meaning.
+    
    Model Building
     - Model Selection: Evaluated various machine learning algorithms such as Logistic Regression, Support Vector Machines (SVM), Random Forest, and Deep Learning models like LSTM (Long Short-Term Memory) for     
       their performance on the classification task.
     - Training: Split the dataset into training and test sets. Trained the selected models on the training set and validated them on the test set.
     - Hyperparameter Tuning: Optimized model parameters using techniques like Grid Search or Random Search to improve performance.
+    
   Model Evaluation
     - Accuracy: Measured the percentage of correctly classified reviews.
     - Precision, Recall, and F1-Score: Evaluated these metrics to understand the model's performance, especially for the "angry" review class, which is critical for identifying customer dissatisfaction.
@@ -37,20 +40,23 @@
   
   The best-performing model achieved an accuracy of X%, with the following metrics for the "angry" class:
   
-  Precision: Y%
-  Recall: Z%
-  F1-Score: W%
-These results indicate that the model is effective in identifying different sentiments in hotel reviews, particularly in pinpointing negative feedback.
-
-Business Impact
-The sentiment analysis model provides the following benefits to hotel management:
-
-Quick Identification of Issues: Automatically flags negative reviews, allowing for rapid response and resolution of customer complaints.
-Enhanced Customer Satisfaction: By addressing issues promptly, hotels can improve their service quality, leading to higher customer satisfaction and loyalty.
-Data-Driven Decisions: Insights from sentiment analysis can inform strategic decisions, such as training programs for staff, improvements in facilities, or marketing strategies.
-Positive Review Leverage: Positive reviews can be identified and highlighted in marketing campaigns to attract more customers.
-Future Work
-Model Improvement: Incorporate more advanced NLP techniques and larger datasets to improve model accuracy.
-Multilingual Support: Extend the model to analyze reviews in multiple languages to cater to a global customer base.
-Integration: Integrate the sentiment analysis model with existing customer relationship management (CRM) systems for seamless operation.
-By automating the sentiment analysis of hotel reviews, this project empowers hotel management to proactively enhance the guest experience and maintain a competitive edge in the industry.
+  Precision: 0.88%
+  Recall: 0.88%
+  Accuracy: 0.88%
+  
+  These results indicate that the model is effective in identifying different sentiments in hotel reviews, particularly in pinpointing negative feedback.
+  
+  Business Impact
+  The sentiment analysis model provides the following benefits to hotel management:
+  
+    - Quick Identification of Issues: Automatically flags negative reviews, allowing for rapid response and resolution of customer complaints.
+    - Enhanced Customer Satisfaction: By addressing issues promptly, hotels can improve their service quality, leading to higher customer satisfaction and loyalty.
+    - Data-Driven Decisions: Insights from sentiment analysis can inform strategic decisions, such as training programs for staff, improvements in facilities, or marketing strategies.
+    - Positive Review Leverage: Positive reviews can be identified and highlighted in marketing campaigns to attract more customers.
+  
+  #Future Work
+    Model Improvement: Incorporate more advanced NLP techniques and larger datasets to improve model accuracy.
+    Multilingual Support: Extend the model to analyze reviews in multiple languages to cater to a global customer base.
+    Integration: Integrate the sentiment analysis model with existing customer relationship management (CRM) systems for seamless operation.
+    
+  By automating the sentiment analysis of hotel reviews, this project empowers hotel management to proactively enhance the guest experience and maintain a competitive edge in the industry.
